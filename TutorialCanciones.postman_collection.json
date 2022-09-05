@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "87ad83b8-9b55-4d36-ab7a-d5e74b1cb836",
+		"name": "TutorialCanciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18425501"
+	},
+	"item": [
+		{
+			"name": "Login Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Charlie\",\r\n    \"contrasena\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Charlie\",\r\n    \"contrasena\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Usuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM5MTE3MCwianRpIjoiYWU3YmIzYjQtYjI5OC00ODAxLTkwNGMtOTg2NTA5Y2ExYTNiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IlBlcGUiLCJuYmYiOjE2NjIzOTExNzAsImV4cCI6MTY2MjM5MjA3MH0.BO-eEt9Y1jXAeG_imMXRTn_IUhoP2-L4Km-ClHvKYYE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/signin/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signin",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Juan\",\r\n    \"contrasena\":\"54321\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/signin/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signin",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Canciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/canciones",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nueva Cancion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"Prueba4\",\r\n    \"minutos\":4,\r\n    \"segundos\":2,\r\n    \"interprete\":\"Carlos Vives\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/canciones",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cancion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/cancion/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cancion",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cancion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"Prueba Segunda\",\r\n    \"interprete\":\"Seneca\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/cancion/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cancion",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cancion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/cancion/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cancion",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Usuario - Albumes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM4OTQ0NywianRpIjoiOWRmZDFiMTctNDcxYi00ZDhlLWFjNDAtZGYwZGJlYjdkNzUyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6Ikp1YW4iLCJuYmYiOjE2NjIzODk0NDcsImV4cCI6MTY2MjM5MDM0N30.N3ski14Ff3Q5O333WR2ICwAZWL8tf2osJbTvyVIVmOI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/usuario/1/albumes",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"usuario",
+						"1",
+						"albumes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Usuario - Album",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM5MTgwMywianRpIjoiNTIzMzBkMDQtNzAzMi00MDYzLWFmZWMtM2U3MGNjNDM3NmJiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IlBlcGUiLCJuYmYiOjE2NjIzOTE4MDMsImV4cCI6MTY2MjM5MjcwM30.zxFxy7MCWbTn2hrm8h69RSjHVJDYKnJuE0FExMNXen4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"Album de prueba 2\",\r\n    \"anio\":1999,\r\n    \"medio\":\"CD\",\r\n    \"descripcion\":\"texto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/usuario/1/albumes",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"usuario",
+						"1",
+						"albumes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Caciones de un Akbum",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM5MTgwMywianRpIjoiNTIzMzBkMDQtNzAzMi00MDYzLWFmZWMtM2U3MGNjNDM3NmJiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IlBlcGUiLCJuYmYiOjE2NjIzOTE4MDMsImV4cCI6MTY2MjM5MjcwM30.zxFxy7MCWbTn2hrm8h69RSjHVJDYKnJuE0FExMNXen4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/album/1/canciones",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"album",
+						"1",
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Cacion de un Akbum",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM5MTgwMywianRpIjoiNTIzMzBkMDQtNzAzMi00MDYzLWFmZWMtM2U3MGNjNDM3NmJiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IlBlcGUiLCJuYmYiOjE2NjIzOTE4MDMsImV4cCI6MTY2MjM5MjcwM30.zxFxy7MCWbTn2hrm8h69RSjHVJDYKnJuE0FExMNXen4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"La Reina\",\r\n    \"minutos\":4,\r\n    \"segundos\":10,\r\n    \"interprete\":\"Diomedes Diaz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/album/1/canciones",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"album",
+						"1",
+						"canciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Album por id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM5MTgwMywianRpIjoiNTIzMzBkMDQtNzAzMi00MDYzLWFmZWMtM2U3MGNjNDM3NmJiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IlBlcGUiLCJuYmYiOjE2NjIzOTE4MDMsImV4cCI6MTY2MjM5MjcwM30.zxFxy7MCWbTn2hrm8h69RSjHVJDYKnJuE0FExMNXen4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/album/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"album",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Album por id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM5MTgwMywianRpIjoiNTIzMzBkMDQtNzAzMi00MDYzLWFmZWMtM2U3MGNjNDM3NmJiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IlBlcGUiLCJuYmYiOjE2NjIzOTE4MDMsImV4cCI6MTY2MjM5MjcwM30.zxFxy7MCWbTn2hrm8h69RSjHVJDYKnJuE0FExMNXen4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"Titulo de Amor\",\r\n    \"anio\":1993,\r\n    \"descripcion\":\"Título de Amor es el vigésimo primer álbum del cantante y compositor Diomedes Díaz, y el séptimo junto con el acordeonero Juancho Rois, lanzado en 1993 por Sony Music.\",\r\n    \"medio\":\"CD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/album/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"album",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Album por id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2MjM5MTgwMywianRpIjoiNTIzMzBkMDQtNzAzMi00MDYzLWFmZWMtM2U3MGNjNDM3NmJiIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IlBlcGUiLCJuYmYiOjE2NjIzOTE4MDMsImV4cCI6MTY2MjM5MjcwM30.zxFxy7MCWbTn2hrm8h69RSjHVJDYKnJuE0FExMNXen4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:5000/album/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"album",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Puntuar Cancion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"puntaje\":4.7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/cancion/1/puntuar",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"cancion",
+						"1",
+						"puntuar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Puntuar Cancion Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5002/tablaPuntajes",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"tablaPuntajes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

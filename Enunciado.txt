@@ -1,0 +1,75 @@
+https://misovirtual.virtual.uniandes.edu.co/codelabs/tutorial-aplicaciones-web-flask/index.html?index=..%2F..tutoriales#0
+
+python -m venv venv
+
+./venv/Scripts/activate
+deactivate
+
+pip install flask==1.1.2
+or
+pip install flask==2.0.1
+
+flask run
+flask run -p 5001
+
+BD sqlalchemy
+pip install flask_sqlalchemy
+
+serializacion --- marshmellow
+ pip install marshmallow-sqlalchemy
+
+api rest con flask
+pip install flask_restful
+
+tokens de seguridad
+pip install flask-jwt-extended
+
+frontend angular
+npm install -g @angular/cli
+
+extensiones
+Angular Essentials
+Angular Files
+
+crear frontent
+ng new frontend
+
+agregar cors a flask
+pip install flask-cors
+
+COLA DE MENSAJES
+pip install celery
+pip install redis
+
+Instalar en Windows con terminal de Ubuntu
+https://medium.com/@RedisLabs/windows-subsystem-for-linux-wsl-10e3ca4d434e
+https://www.javatpoint.com/celery-tutorial-using-python
+
+Correr servicio Redis (en terminal ubuntu)
+redis-server
+sudo service redis-server restart
+
+
+Correr Worker
+celery -A flaskr.tareas.tareas worker -l info -P solo
+
+celery -A tareas worker -l info -E -Q logs -P solo
+pkill -f celery
+
+
+Instalar Requests
+pip install requests
+
+Instalar para Segundo MS (desde python a db postgres)
+pip install psycopg2
+
+
+toca instalar postresql para hacer la prueba del ms 2
+https://www.youtube.com/watch?v=BLH3s5eTL4Y
+
+comandos finales:
+terminal Linux: redis-server
+proyecto flaskr: flask run -p 5000
+proyecto microservicio1: flask run -p 5001
+proyecto microservicio2/flaskr: flask run -p 5002
+worker: celery -A flaskr.tareas worker -l info -P solo
