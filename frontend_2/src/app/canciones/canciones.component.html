@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th class='h4'>Titulo</th>
+      <th class='h4'>Minutos</th>
+      <th class='h4'>Segundos</th>
+      <th class='h4'>Interprete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cancion of canciones">
+      <td><dd>{{cancion.titulo}}</dd></td>
+      <td><dd>{{cancion.minutos}}</dd></td>
+      <td><dd>{{cancion.segundos}}</dd></td>
+      <td><dd>{{cancion.interprete}}</dd></td>
+    </tr>
+  </tbody>
+</table>
+
